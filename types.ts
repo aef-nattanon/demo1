@@ -1,0 +1,34 @@
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  tags: string[];
+  link?: string;
+  github?: string;
+  image: string;
+}
+
+export interface Experience {
+  id: number;
+  role: string;
+  company: string;
+  period: string;
+  description: string;
+}
+
+export interface Skill {
+  name: string;
+  level: number; // 0-100
+  category: 'Frontend' | 'Backend' | 'Tools' | 'Other';
+}
+
+export interface SocialLink {
+  platform: string;
+  url: string;
+  icon: string; // Icon name
+}
+
+export interface Message {
+  role: 'user' | 'model';
+  text: string;
+}
